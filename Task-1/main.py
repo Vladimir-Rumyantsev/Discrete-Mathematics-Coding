@@ -105,9 +105,8 @@ for i in line:
     else:
         try:
             alphabet[i.upper()][0] += 1
-        except Exception as ex:
-            print(f'\nОшибка во время чтения текста!!!\nНеизвестный символ {ex}')
-            exit()
+        except:
+            alphabet[i.upper()] = [1]
 
 print('\n')
 
